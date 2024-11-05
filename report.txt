@@ -1,0 +1,25 @@
+Angela Quan 
+Prof. Smallberg
+CS 32 
+2024 March 14 
+
+
+Project 4 Report 
+
+
+ GeoDatabase
+load()  
+* If N is the number of lines in mapdata.txt, load() has Big-O of O(N).
+
+
+get_connected_points()
+* If the GeoDatabase holds N GeoPoints and each GeoPoint is associated with P other GeoPoints on average, this method is O(P); 
+
+
+get_street_name()
+* O(1) constant time 
+
+
+Router: 
+route()
+* I used A*, i create a struct called pair to hold a GeoPoint and its F value. I used a priority queue to store pairs in, the priority queue prioritizes pairs with smallest F values. Additionally I use a hashmap called previousPoints to map a GeoPoint to the point that comes before it. This map also keeps track of points that I’ve already visited.
